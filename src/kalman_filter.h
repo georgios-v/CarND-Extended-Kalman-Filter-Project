@@ -64,6 +64,15 @@ public:
 	 */
 	void UpdateEKF(const Eigen::VectorXd &z);
 
+private:
+	
+	/**
+	 * Private method that avoids duplicate code
+	 * @param y
+	 */
+	void Update_(const Eigen::VectorXd &y);
+
+
 };
 
 #endif /* KALMAN_FILTER_H_ */
